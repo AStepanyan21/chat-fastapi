@@ -1,0 +1,34 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+fastapi = "*"
+uvicorn = {extras = ["standard"], version = "*"}
+alembic = "*"
+psycopg2-binary = "*"
+pydantic-settings = "*"
+python-dotenv = "*"
+sqlalchemy = {extras = ["asyncio"], version = "*"}
+asyncpg = "*"
+passlib = {extras = ["bcrypt"], version = "*"}
+python-jose = {extras = ["cryptography"], version = "*"}
+pydantic = {extras = ["email"], version = "*"}
+python-multipart = "*"
+
+[dev-packages]
+black = "*"
+ruff = "*"
+mypy = "*"
+isort = "*"
+pytest = "*"
+pytest-asyncio = "*"
+pytest-cov = "*"
+httpx = "*"
+aiosqlite = "*"
+faker = "*"
+
+[requires]
+python_version = "3.13"
+python_full_version = "3.13.3"

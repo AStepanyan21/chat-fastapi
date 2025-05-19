@@ -1,0 +1,12 @@
+from enum import Enum
+
+
+class WebSocketEventType(str, Enum):
+    READ = "READ"
+    MESSAGE_READ_BY_ALL = "MESSAGE_READ_BY_ALL"
+    GROUP_UPDATED = "GROUP_UPDATED"
+    CHAT_CREATED = "CHAT_CREATED"
+    NEW_MESSAGE = "NEW_MESSAGE"
+    USER_TYPING = "USER_TYPING"
+    USER_ADDED = "USER_ADDED"
+    MESSAGE_READ = "MESSAGE_READ"
